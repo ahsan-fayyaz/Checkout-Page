@@ -14,17 +14,17 @@
   </head>
   <body class="bg-light">
       <nav class ="navbar navbar-dark bg-dark">
-        <a href="#" class="navbar-brand">By Ahsan Fayyaz</a>
+        <a href="#" class="navbar-brand" style="font-family:'Courier New', Courier, monospace;">Designed by Ahsan Fayyaz</a>
       </nav>
 
       <div class="container">
           <div class="py-5 text-center">
             <img class ="mb-4 d-block mx-auto" src="https://icons.iconarchive.com/icons/iconsmind/outline/512/Checkout-icon.png" alt="Checkout Cart" width="90" height="90">
-            <h2 class="heading">Welcome to CSC473 Checkout!</h2>
+            <h2 class="heading">WELCOME TO CSC473 CHECKOUT</h2>
           </div>
       </div>
       <br>
-      <form action="" class="main-form needs-validation" novalidate>
+      <form action="" class="needs-validation" novalidate>
       <div class="container">
         <div class="row">
           <div class="col-8">
@@ -48,6 +48,7 @@
                           </div>
                           <div class="col-md-4">
                             <label for="address2" class="form-label">Address 2</label>
+                            <small class="text-muted">(Optional)</small>
                             <input id="address2" type="text" class="form-control" placeholder="Apt/Suite">
                         </div>
                         <div class="col-md-4">
@@ -141,16 +142,15 @@
                       
       
                       <hr class="my-5">
-                  <!-- </form> -->
                   
                   <h3 class="mb-4">Payment Information</h3>
                   <h5>Accepted Cards</h6>
                   <div class="icon-container">
-                    <em class="fa fa-cc-visa" style="color:navy;font-size:48px;"></em>
-                    <em class="fa fa-cc-amex" style="color:blue;font-size:48px;"></em>
-                    <em class="fa fa-cc-mastercard" style="color:red;font-size:48px;"></em>
-                    <em class="fa fa-cc-discover" style="color:orange;font-size:48px;"></em>
-                    <em class="fa fa-cc-paypal" style="font-size:48px;color:black"></em>
+                    <em class="fa fa-cc-visa" style="color:navy;font-size:80px;"></em>
+                    <em class="fa fa-cc-amex" style="color:blue;font-size:80px;"></em>
+                    <em class="fa fa-cc-mastercard" style="color:red;font-size:80px;"></em>
+                    <em class="fa fa-cc-discover" style="color:orange;font-size:80px;"></em>
+                    <em class="fa fa-cc-paypal" style="color:black;font-size:80px"></em>
                   </div>
                   <br>
                   <div class="form-check">
@@ -176,7 +176,13 @@
                       <small class="text-muted">(as displayed on your card)</small>
                       <input id="paymentname" type="text" class="form-control" placeholder="John Doe" required> 
                       <div class="invalid-feedback"> Credit Card Name Invalid!</div>
-
+                      <div class="row my-3 gy-3">
+                      <div class="col-md-8">
+                        <label for="email" class="form-label">Email</label>
+                        <small class="text-muted">(Optional)</small>
+                        <input id="email" type="text" class="form-control" placeholder="johndoe@email.com"> 
+                      </div>
+                    </div>
                   </div>
                   <div class="col-md-6">
                     <label for="paymentcard" class="form-label">Credit Card Number</label>
@@ -199,75 +205,73 @@
                 </div>
               </div>
             </div>
-            <hr class="my-4">
             <button type="submit" class="btn btn-primary btn-lg btn-block">Save Info</button>
-            <hr class="my-4">
           </div>
           <div class="col-4">
-            <hr class="my-4">
-            <h4 class="d-flex justify-content-between align-item-center">
-              <span class="text-muted">Shopping Cart</span>
-              <span class="badge bg-secondary rounded-pill">6</span>
-            </h4>
-
-            <ul class="list-group">
-              <li class="list-group-item d-flex justify-content-between">
-                <div>
-                  <h5>Apple iPhone 6</h5>
-                  <span class="text-muted">64GB White</span>
-                </div>
-                <span class="text-muted">$200</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between">
-                <div>
-                  <h5>Apple MacBook</h5>
-                  <span class="text-muted">256GB Space Gray</span>
-                </div>
-                <span class="text-muted">$2999</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between">
-                <div>
-                  <h5>HP Spectre</h5>
-                  <span class="text-muted">7th-Gen</span>
-                </div>
-                <span class="text-muted">$1999</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between">
-                <div>
-                  <h5>Apple iPhone 11</h5>
-                  <span class="text-muted">128GB Red</span>
-                </div>
-                <span class="text-muted">$699</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between">
-                <div>
-                  <h5 class="text-success">Apple iPhone 3G</h5>
-                  <span class="text-success">8GB Black</span>
-                </div>
-                <span class="text-success">Free</span>
-              </li>
+            <div class="row-4">
+              <h4 class="d-flex justify-content-between align-item-center">
+                <span class="text-muted" ">Shopping Cart</span>
+                <span class="badge bg-secondary squared-pill">6</span>
+              </h4>
+  
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between">
+                  <div>
+                    <h5>Apple iPhone 6</h5>
+                    <span class="text-muted">64GB White</span>
+                  </div>
+                  <span class="text-muted">$200</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <div>
+                    <h5>Apple MacBook</h5>
+                    <span class="text-muted">256GB Space Gray</span>
+                  </div>
+                  <span class="text-muted">$2999</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <div>
+                    <h5>HP Spectre</h5>
+                    <span class="text-muted">7th-Gen</span>
+                  </div>
+                  <span class="text-muted">$1999</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <div>
+                    <h5>Apple iPhone 11</h5>
+                    <span class="text-muted">128GB Red</span>
+                  </div>
+                  <span class="text-muted">$699</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <div>
+                    <h5 class="text-success">Apple iPhone 3G</h5>
+                    <span class="text-success">8GB Black</span>
+                  </div>
+                  <span class="text-success">Free</span>
+                </li>
+                <br>
+                <br>
+                <li class="list-group-item d-flex justify-content-between">
+                  <div>
+                    <h5>Tax Applicable</h5>
+                    <span class="text-muted">(Varies by State)</span>
+                  </div>
+                  <span class="">$486.50</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <div>
+                    <h5>Total</h5>
+                    <span class="text-muted">With Tax</span>
+                  </div>
+                  <span class="">$6383.50</span>
+                </li>
+              </ul>
               <br>
-              <br>
-              <li class="list-group-item d-flex justify-content-between">
-                <div>
-                  <h5>Tax Applicable</h5>
-                  <span class="text-muted">Varies by state</span>
-                </div>
-                <span class="">$486.50</span>
-              </li>
-              <br>
-              <li class="list-group-item d-flex justify-content-between">
-                <div>
-                  <h5>Total</h5>
-                  <span class="text-muted">With Tax</span>
-                </div>
-                <span class="">$6383.50</span>
-              </li>
-            </ul>
-            <hr class="my-4">
-            <button type="submit" class="btn btn-warning btn-lg btn-block">Place Order</button>
-            <hr class="my-4">
-          </div>
+              <button type="submit" class="btn btn-warning btn-lg btn-block">Place Order</button>
+            </div>
+            </div>
+            
         </div>
         </div>
       </div>
