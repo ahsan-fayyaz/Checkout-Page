@@ -71,10 +71,17 @@
                 </div>
 
                 <hr class="my-4">
-                
-
-
             </form>
+
+            <div class="col-12">
+              <div class="form-check"> 
+                <input id="sameaddress" type="checkbox" class="form-check-input">
+                <label class="form-check-label" for="sameaddress">My billing and shipping address are same</label>
+              </div>
+            </div>
+            <hr class="my-4">
+
+
             <h3 class="mb-4">Shipping Information</h3>
             <form action="">
                 <div class="row g-3">
@@ -126,9 +133,53 @@
                   </div>
                 </div>
 
-                <hr class="my-4">
+                <hr class="my-5">
             </form>
-          
+
+            <h3 class="mb-4">Payment Information</h3>
+            <div class="form-check">
+              <input id ="card" name="payment" type="radio" class="form-check-input" required checked>
+              <label for="card">Credit/Debit Card</label>
+            </div>
+            <div class="form-check">
+              <input id ="paypal" name="payment" type="radio" class="form-check-input" required>
+              <label for="paypal">Paypal</label>
+            </div>
+            <div class="form-check">
+              <input id ="cashondelivery" name="payment" type="radio" class="form-check-input" required>
+              <label for="cashondelivery">Cash on delivery</label>
+            </div>
+            <div class="form-check">
+              <input id ="free" name="payment" type="radio" class="form-check-input" required>
+              <label for="free">I want it free</label>
+            </div>
+
+            <div class="row my-3 gy-3">
+              <div class="col-md-6">
+                <label for="paymentname" class="form-label">Full Name</label>
+                <small class="text-muted">(as displayed on your card)</small>
+                <input id="paymentname" type="text" class="form-control" placeholder="John Doe" required> 
+                <div class="invalid-feedback"> Required</div>
+            </div>
+            <div class="col-md-6">
+              <label for="paymentcard" class="form-label">Credit Card Number</label>
+              <input id="paymentcard" type="text" class="form-control" placeholder="16 digit number" required>
+              <div class="invalid-feedback">Required</div>
+
+              <div class="row my-3 gy-3">
+                <div class="col-md-6">
+                  <label for="cvv" class="form-label">CVV</label>
+                  <input id="cvv" type="text" class="form-control" placeholder="123" required> 
+                  <div class="invalid-feedback"> Required</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="expiration" class="form-label">Expiration</label>
+                  <input id="expiration" type="text" class="form-control" placeholder="(DD/YYYY)" required> 
+                  <div class="invalid-feedback"> Required</div>
+                </div>
+              </div>
+          </div>
+            </div>
       </div>
     
     
