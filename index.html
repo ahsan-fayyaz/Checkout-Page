@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Hello, world!</title>
   </head>
@@ -19,7 +20,7 @@
       <div class="container">
           <div class="py-5 text-center">
             <img class ="mb-4 d-block mx-auto" src="https://icons.iconarchive.com/icons/iconsmind/outline/512/Checkout-icon.png" alt="Checkout Cart" width="90" height="90">
-            <h2>Getting your order ready!</h2>
+            <h2 class="heading">Getting your order ready!</h2>
           </div>
       </div>
       <br>
@@ -144,8 +145,16 @@
       
                       <hr class="my-5">
                   </form>
-      
+                  
                   <h3 class="mb-4">Payment Information</h3>
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <em class="fa fa-cc-visa" style="color:navy;font-size:48px;"></em>
+                    <em class="fa fa-cc-amex" style="color:blue;font-size:48px;"></em>
+                    <em class="fa fa-cc-mastercard" style="color:red;font-size:48px;"></em>
+                    <em class="fa fa-cc-discover" style="color:orange;font-size:48px;"></em>
+                  </div>
+                  <br>
                   <div class="form-check">
                     <input id ="card" name="payment" type="radio" class="form-check-input" required checked>
                     <label for="card">Credit/Debit Card</label>
@@ -169,7 +178,10 @@
                       <small class="text-muted">(as displayed on your card)</small>
                       <input id="paymentname" type="text" class="form-control" placeholder="John Doe" required> 
                       <div class="invalid-feedback"> Required</div>
-      
+
+                      <!-- <div class="row my-3 gy-3">
+                        
+                      </div> -->
                   </div>
                   <div class="col-md-6">
                     <label for="paymentcard" class="form-label">Credit Card Number</label>
@@ -238,6 +250,8 @@
                 </div>
                 <span class="text-success">Free</span>
               </li>
+              <br>
+              <br>
               <li class="list-group-item d-flex justify-content-between">
                 <div>
                   <h5>Tax Applicable</h5>
@@ -245,10 +259,11 @@
                 </div>
                 <span class="">$486.50</span>
               </li>
+              <br>
               <li class="list-group-item d-flex justify-content-between">
                 <div>
                   <h5>Total</h5>
-                  <span class="text-muted">Including tax</span>
+                  <span class="text-muted">With Tax</span>
                 </div>
                 <span class="">$6383.50</span>
               </li>
