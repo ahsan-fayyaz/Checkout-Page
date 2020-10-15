@@ -8,24 +8,24 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css" type="text/css">
-    
+
     <title>Hello, world!</title>
   </head>
   <body class="bg-light">
-      <nav class="navbar navbar-dark bg-dark">
+      <nav class ="navbar navbar-dark bg-dark">
         <a href="#" class="navbar-brand">By Ahsan Fayyaz</a>
       </nav>
 
       <div class="container">
           <div class="py-5 text-center">
             <img class ="mb-4 d-block mx-auto" src="https://icons.iconarchive.com/icons/iconsmind/outline/512/Checkout-icon.png" alt="Checkout Cart" width="90" height="90">
-            <h2>Getting your order!</h2>
+            <h2>Getting your order ready!</h2>
           </div>
       </div>
-
+      <br>
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-8">
             <div class="container">
               <hr class="my-4">
                   <h3 class="mb-4">Billing Information</h3>
@@ -169,6 +169,7 @@
                       <small class="text-muted">(as displayed on your card)</small>
                       <input id="paymentname" type="text" class="form-control" placeholder="John Doe" required> 
                       <div class="invalid-feedback"> Required</div>
+      
                   </div>
                   <div class="col-md-6">
                     <label for="paymentcard" class="form-label">Credit Card Number</label>
@@ -188,10 +189,14 @@
                       </div>
                     </div>
                 </div>
-                  </div>
+              </div>
             </div>
+            <hr class="my-4">
+            <button class="btn btn-primary btn-lg btn-block">Save Info</button>
+            <hr class="my-4">
           </div>
           <div class="col-4">
+            <hr class="my-4">
             <h4 class="d-flex justify-content-between align-item-center">
               <span class="text-muted">Shopping Cart</span>
               <span class="badge bg-secondary rounded-pill">6</span>
@@ -248,6 +253,9 @@
                 <span class="">$6383.50</span>
               </li>
             </ul>
+            <hr class="my-4">
+            <button class="btn btn-primary btn-lg btn-block">Checkout!</button>
+            <hr class="my-4">
           </div>
         </div>
         </div>
