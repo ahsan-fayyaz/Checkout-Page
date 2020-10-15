@@ -11,175 +11,245 @@
     <title>Hello, world!</title>
   </head>
   <body class="bg-light">
+      <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">By Ahsan Fayyaz</a>
+      </nav>
+
       <div class="container">
           <div class="py-5 text-center">
             <img class ="mb-4 d-block mx-auto" src="https://icons.iconarchive.com/icons/iconsmind/outline/512/Checkout-icon.png" alt="Checkout Cart" width="90" height="90">
             <h2>Getting your order!</h2>
           </div>
       </div>
+
       <div class="container">
-        <hr class="my-4">
-            <h3 class="mb-4">Billing Information</h3>
-            <form action="">
-                <div class="row g-3">
+        <div class="row">
+          <div class="col-6">
+            <div class="container">
+              <hr class="my-4">
+                  <h3 class="mb-4">Billing Information</h3>
+                  <form action="">
+                      <div class="row g-3">
+                          <div class="col-md-6">
+                              <label for="firstname" class="form-label">First Name</label>
+                              <input id="firstname" type="text" class="form-control" placeholder="John" required>
+                              <div class="invalid-feedback">Invalid firstname!</div>
+                          </div>
+                          <div class="col-md-6">
+                              <label for="lastname" class="form-label">Last Name</label>
+                              <input id="lastname" type="text" class="form-control" placeholder="Doe" required>
+                              <div class="invalid-feedback">Invalid lastname!</div>
+                          </div>
+                          <div class="col-md-8">
+                              <label for="address1" class="form-label">Address</label>
+                              <input id="address1" type="text" class="form-control" placeholder="123 Street" required>
+                              <div class="invalid-feedback">Invalid address!</div>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="address2" class="form-label">Address 2</label>
+                            <input id="address2" type="text" class="form-control" placeholder="Apt/Suite" required>
+                            <div class="invalid-feedback">Invalid address!</div>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="city" class="form-label">City</label>
+                          <input id="city" type="text" class="form-control" placeholder="Happy Town" required>
+                          <div class="invalid-feedback">Invalid city!</div>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="state" class="form-label">State</label>
+                          <select id="state" class="form-control"> 
+                            <option value=""> Select </option>
+                            <option value="newyork"> New York </option>
+                            <option value="newjersey"> New Jersey  </option>
+                            <option value="florida"> Florida </option>
+                            <option value="ohio"> Ohio </option>
+                            <option value="indiana"> Indiana </option>
+                            <option value="connecticut"> Connecticut </option>
+                            <option value="maine"> Maine </option>
+                            <option value="maryland"> Maryland  </option>
+                            <option value="virginia"> Virginia </option>
+                          </select>
+                          <div class="invalid-feedback">Invalid State!</div>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="zip" class="form-label">Zip Code</label>
+                          <input id="zip" type="text" class="form-control" placeholder="12345" required>
+                          <div class="invalid-feedback">Invalid zip code!</div>
+                        </div>
+                      </div>
+      
+                      <hr class="my-4">
+                  </form>
+      
+                  <div class="col-12">
+                    <div class="form-check"> 
+                      <input id="sameaddress" type="checkbox" class="form-check-input">
+                      <label class="form-check-label" for="sameaddress">My billing and shipping address are same</label>
+                    </div>
+                  </div>
+                  <hr class="my-4">
+      
+      
+                  <h3 class="mb-4">Shipping Information</h3>
+                  <form action="">
+                      <div class="row g-3">
+                          <div class="col-md-6">
+                              <label for="firstname" class="form-label">First Name</label>
+                              <input id="firstname" type="text" class="form-control" placeholder="John" required>
+                              <div class="invalid-feedback">Invalid firstname!</div>
+                          </div>
+                          <div class="col-md-6">
+                              <label for="lastname" class="form-label">Last Name</label>
+                              <input id="lastname" type="text" class="form-control" placeholder="Doe" required>
+                              <div class="invalid-feedback">Invalid lastname!</div>
+                          </div>
+                          <div class="col-md-8">
+                              <label for="address1" class="form-label">Address</label>
+                              <input id="address1" type="text" class="form-control" placeholder="123 Street" required>
+                              <div class="invalid-feedback">Invalid address!</div>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="address2" class="form-label">Address 2</label>
+                            <input id="address2" type="text" class="form-control" placeholder="Apt/Suite" required>
+                            <div class="invalid-feedback">Invalid address!</div>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="city" class="form-label">City</label>
+                          <input id="city" type="text" class="form-control" placeholder="Happy Town" required>
+                          <div class="invalid-feedback">Invalid city!</div>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="state" class="form-label">State</label>
+                          <select id="state" class="form-control"> 
+                            <option value=""> Select </option>
+                            <option value="newyork"> New York </option>
+                            <option value="newjersey"> New Jersey  </option>
+                            <option value="florida"> Florida </option>
+                            <option value="ohio"> Ohio </option>
+                            <option value="indiana"> Indiana </option>
+                            <option value="connecticut"> Connecticut </option>
+                            <option value="maine"> Maine </option>
+                            <option value="maryland"> Maryland  </option>
+                            <option value="virginia"> Virginia </option>
+                          </select>
+                          <div class="invalid-feedback">Invalid State!</div>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="zip" class="form-label">Zip Code</label>
+                          <input id="zip" type="text" class="form-control" placeholder="12345" required>
+                          <div class="invalid-feedback">Invalid zip code!</div>
+                        </div>
+                      </div>
+      
+                      <hr class="my-5">
+                  </form>
+      
+                  <h3 class="mb-4">Payment Information</h3>
+                  <div class="form-check">
+                    <input id ="card" name="payment" type="radio" class="form-check-input" required checked>
+                    <label for="card">Credit/Debit Card</label>
+                  </div>
+                  <div class="form-check">
+                    <input id ="paypal" name="payment" type="radio" class="form-check-input" required>
+                    <label for="paypal">Paypal</label>
+                  </div>
+                  <div class="form-check">
+                    <input id ="cashondelivery" name="payment" type="radio" class="form-check-input" required>
+                    <label for="cashondelivery">Cash on delivery</label>
+                  </div>
+                  <div class="form-check">
+                    <input id ="free" name="payment" type="radio" class="form-check-input" required>
+                    <label for="free">I want it free</label>
+                  </div>
+      
+                  <div class="row my-3 gy-3">
                     <div class="col-md-6">
-                        <label for="firstname" class="form-label">First Name</label>
-                        <input id="firstname" type="text" class="form-control" placeholder="John" required>
-                        <div class="invalid-feedback">Invalid firstname!</div>
+                      <label for="paymentname" class="form-label">Full Name</label>
+                      <small class="text-muted">(as displayed on your card)</small>
+                      <input id="paymentname" type="text" class="form-control" placeholder="John Doe" required> 
+                      <div class="invalid-feedback"> Required</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="paymentcard" class="form-label">Credit Card Number</label>
+                    <input id="paymentcard" type="text" class="form-control" placeholder="16 digit number" required>
+                    <div class="invalid-feedback">Required</div>
+      
+                    <div class="row my-3 gy-3">
+                      <div class="col-md-6">
+                        <label for="cvv" class="form-label">CVV</label>
+                        <input id="cvv" type="text" class="form-control" placeholder="123" required> 
+                        <div class="invalid-feedback"> Required</div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="expiration" class="form-label">Expiration</label>
+                        <input id="expiration" type="text" class="form-control" placeholder="(DD/YYYY)" required> 
+                        <div class="invalid-feedback"> Required</div>
+                      </div>
                     </div>
-                    <div class="col-md-6">
-                        <label for="lastname" class="form-label">Last Name</label>
-                        <input id="lastname" type="text" class="form-control" placeholder="Doe" required>
-                        <div class="invalid-feedback">Invalid lastname!</div>
-                    </div>
-                    <div class="col-md-8">
-                        <label for="address1" class="form-label">Address</label>
-                        <input id="address1" type="text" class="form-control" placeholder="123 Street" required>
-                        <div class="invalid-feedback">Invalid address!</div>
-                    </div>
-                    <div class="col-md-4">
-                      <label for="address2" class="form-label">Address 2</label>
-                      <input id="address2" type="text" class="form-control" placeholder="Apt/Suite" required>
-                      <div class="invalid-feedback">Invalid address!</div>
-                  </div>
-                  <div class="col-md-4">
-                    <label for="city" class="form-label">City</label>
-                    <input id="city" type="text" class="form-control" placeholder="Happy Town" required>
-                    <div class="invalid-feedback">Invalid city!</div>
-                  </div>
-                  <div class="col-md-4">
-                    <label for="state" class="form-label">State</label>
-                    <select id="state" class="form-control"> 
-                      <option value=""> Select </option>
-                      <option value="newyork"> New York </option>
-                      <option value="newjersey"> New Jersey  </option>
-                      <option value="florida"> Florida </option>
-                      <option value="ohio"> Ohio </option>
-                      <option value="indiana"> Indiana </option>
-                      <option value="connecticut"> Connecticut </option>
-                      <option value="maine"> Maine </option>
-                      <option value="maryland"> Maryland  </option>
-                      <option value="virginia"> Virginia </option>
-                    </select>
-                    <div class="invalid-feedback">Invalid State!</div>
-                  </div>
-                  <div class="col-md-4">
-                    <label for="zip" class="form-label">Zip Code</label>
-                    <input id="zip" type="text" class="form-control" placeholder="12345" required>
-                    <div class="invalid-feedback">Invalid zip code!</div>
-                  </div>
                 </div>
-
-                <hr class="my-4">
-            </form>
-
-            <div class="col-12">
-              <div class="form-check"> 
-                <input id="sameaddress" type="checkbox" class="form-check-input">
-                <label class="form-check-label" for="sameaddress">My billing and shipping address are same</label>
-              </div>
-            </div>
-            <hr class="my-4">
-
-
-            <h3 class="mb-4">Shipping Information</h3>
-            <form action="">
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <label for="firstname" class="form-label">First Name</label>
-                        <input id="firstname" type="text" class="form-control" placeholder="John" required>
-                        <div class="invalid-feedback">Invalid firstname!</div>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="lastname" class="form-label">Last Name</label>
-                        <input id="lastname" type="text" class="form-control" placeholder="Doe" required>
-                        <div class="invalid-feedback">Invalid lastname!</div>
-                    </div>
-                    <div class="col-md-8">
-                        <label for="address1" class="form-label">Address</label>
-                        <input id="address1" type="text" class="form-control" placeholder="123 Street" required>
-                        <div class="invalid-feedback">Invalid address!</div>
-                    </div>
-                    <div class="col-md-4">
-                      <label for="address2" class="form-label">Address 2</label>
-                      <input id="address2" type="text" class="form-control" placeholder="Apt/Suite" required>
-                      <div class="invalid-feedback">Invalid address!</div>
                   </div>
-                  <div class="col-md-4">
-                    <label for="city" class="form-label">City</label>
-                    <input id="city" type="text" class="form-control" placeholder="Happy Town" required>
-                    <div class="invalid-feedback">Invalid city!</div>
-                  </div>
-                  <div class="col-md-4">
-                    <label for="state" class="form-label">State</label>
-                    <select id="state" class="form-control"> 
-                      <option value=""> Select </option>
-                      <option value="newyork"> New York </option>
-                      <option value="newjersey"> New Jersey  </option>
-                      <option value="florida"> Florida </option>
-                      <option value="ohio"> Ohio </option>
-                      <option value="indiana"> Indiana </option>
-                      <option value="connecticut"> Connecticut </option>
-                      <option value="maine"> Maine </option>
-                      <option value="maryland"> Maryland  </option>
-                      <option value="virginia"> Virginia </option>
-                    </select>
-                    <div class="invalid-feedback">Invalid State!</div>
-                  </div>
-                  <div class="col-md-4">
-                    <label for="zip" class="form-label">Zip Code</label>
-                    <input id="zip" type="text" class="form-control" placeholder="12345" required>
-                    <div class="invalid-feedback">Invalid zip code!</div>
-                  </div>
-                </div>
-
-                <hr class="my-5">
-            </form>
-
-            <h3 class="mb-4">Payment Information</h3>
-            <div class="form-check">
-              <input id ="card" name="payment" type="radio" class="form-check-input" required checked>
-              <label for="card">Credit/Debit Card</label>
             </div>
-            <div class="form-check">
-              <input id ="paypal" name="payment" type="radio" class="form-check-input" required>
-              <label for="paypal">Paypal</label>
-            </div>
-            <div class="form-check">
-              <input id ="cashondelivery" name="payment" type="radio" class="form-check-input" required>
-              <label for="cashondelivery">Cash on delivery</label>
-            </div>
-            <div class="form-check">
-              <input id ="free" name="payment" type="radio" class="form-check-input" required>
-              <label for="free">I want it free</label>
-            </div>
-
-            <div class="row my-3 gy-3">
-              <div class="col-md-6">
-                <label for="paymentname" class="form-label">Full Name</label>
-                <small class="text-muted">(as displayed on your card)</small>
-                <input id="paymentname" type="text" class="form-control" placeholder="John Doe" required> 
-                <div class="invalid-feedback"> Required</div>
-            </div>
-            <div class="col-md-6">
-              <label for="paymentcard" class="form-label">Credit Card Number</label>
-              <input id="paymentcard" type="text" class="form-control" placeholder="16 digit number" required>
-              <div class="invalid-feedback">Required</div>
-
-              <div class="row my-3 gy-3">
-                <div class="col-md-6">
-                  <label for="cvv" class="form-label">CVV</label>
-                  <input id="cvv" type="text" class="form-control" placeholder="123" required> 
-                  <div class="invalid-feedback"> Required</div>
-                </div>
-                <div class="col-md-6">
-                  <label for="expiration" class="form-label">Expiration</label>
-                  <input id="expiration" type="text" class="form-control" placeholder="(DD/YYYY)" required> 
-                  <div class="invalid-feedback"> Required</div>
-                </div>
-              </div>
           </div>
-            </div>
+          <div class="col-4">
+            <h4 class="d-flex justify-content-between align-item-center">
+              <span class="text-muted">Shopping Cart</span>
+              <span class="badge bg-secondary rounded-pill">6</span>
+            </h4>
+
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between">
+                <div>
+                  <h5>Apple iPhone 6</h5>
+                  <span class="text-muted">64GB White</span>
+                </div>
+                <span class="text-muted">$200</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <div>
+                  <h5>Apple MacBook</h5>
+                  <span class="text-muted">256GB Space Gray</span>
+                </div>
+                <span class="text-muted">$2999</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <div>
+                  <h5>HP Spectre</h5>
+                  <span class="text-muted">7th-Gen</span>
+                </div>
+                <span class="text-muted">$1999</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <div>
+                  <h5>Apple iPhone 11</h5>
+                  <span class="text-muted">128GB Red</span>
+                </div>
+                <span class="text-muted">$699</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <div>
+                  <h5 class="text-success">Apple iPhone 3G</h5>
+                  <span class="text-success">8GB Black</span>
+                </div>
+                <span class="text-success">Free</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <div>
+                  <h5>Tax Applicable</h5>
+                  <span class="text-muted">Varies by state</span>
+                </div>
+                <span class="">$486.50</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <div>
+                  <h5>Total</h5>
+                  <span class="text-muted">Including tax</span>
+                </div>
+                <span class="">$6383.50</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
       </div>
     
     
